@@ -573,6 +573,56 @@ The components of the browsers are:
 
 HTML parsing
 ------------
+Parsing is a crucial process in computing, where it involves analyzing a string of symbols, 
+either in natural language, computer languages, or data structures, to determine its grammatical 
+structure with respect to a given formal grammar. Parsing is used in various applications, 
+including compilers, interpreters, data processing, and more.
+
+**Types of Parsers**
+1. Top-Down Parsers:
+
+Recursive Descent Parser: This type of parser uses a set of recursive procedures to process the input. 
+It is simple to implement but can be inefficient for complex grammars.
+Predictive Parser: A more efficient form of recursive descent parser that uses lookahead to make parsing decisions.
+
+2. Bottom-Up Parsers:
+
+Shift-Reduce Parser: This parser shifts input symbols onto a stack and reduces them to grammar rules.
+LR Parser: A more powerful type of bottom-up parser that can handle a wider range of grammars. 
+Variants include SLR, LALR, and Canonical LR parsers.
+
+Parsing Techniques
+1. Lexical Analysis:
+
+The first phase of parsing, where the input is divided into tokens. A lexer or scanner performs this task, 
+identifying keywords, operators, identifiers, and other elements.
+
+2. Syntax Analysis:
+
+The second phase, where the tokens are analyzed according to the grammar rules. 
+This phase constructs a parse tree or syntax tree, representing the hierarchical structure of the input.
+
+3. Semantic Analysis:
+
+This phase checks for semantic errors and ensures that the parsed input makes sense in the given context. 
+It involves type checking, scope resolution, and other semantic checks.
+
+** Applications of Parsing **
+1. Compilers and Interpreters:
+
+Parsing is a fundamental step in the compilation process, converting source code into an intermediate representation or machine code.
+
+2. Data Processing:
+
+Parsing is used to process and extract meaningful information from structured data formats like JSON, XML, CSV, etc.
+
+3. Natural Language Processing (NLP):
+
+Parsing is used to analyze and understand human languages, enabling applications like speech recognition, text analysis, and machine translation.
+
+3. Web Development:
+
+Parsing is used in web browsers to process HTML, CSS, and JavaScript, rendering web pages correctly.
 
 The rendering engine starts getting the contents of the requested
 document from the networking layer. This will usually be done in 8kB chunks.
